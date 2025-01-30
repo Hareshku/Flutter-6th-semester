@@ -1,0 +1,55 @@
+
+// AppBar
+
+AppBar(
+toolbarTextStyle: TextStyle(color: Colors.white),
+title: Text("App Bar"),
+centerTitle: true,
+backgroundColor: Colors.orange,
+leading: const Icon(
+Icons.widgets,
+color: Colors.amber,
+),
+actions: [
+IconButton(
+onPressed: () {},
+icon: Icon(Icons.person),
+),
+IconButton(onPressed: () {}, icon: Icon(Icons.notification_add)),
+IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
+IconButton(onPressed: () {}, icon: Icon(Icons.account_circle)),
+IconButton(onPressed: () {}, icon: Icon(Icons.alarm)),
+IconButton(onPressed: () {}, icon: Icon(Icons.more_rounded)),
+PopupMenuButton(
+itemBuilder: (context) {
+return [
+PopupMenuItem(value: 1, child: Text('home')),
+PopupMenuItem(value: 2, child: Text('settings')),
+PopupMenuItem(value: 3, child: Text('about'))
+];
+},
+onSelected: (value) {
+if (value == 1) {
+ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+content: Text("You selected home"),
+duration: Duration(microseconds: 3000),
+// padding: EdgeInsets.all(20),
+));
+} else if (value == 2) {
+ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+content: Text("You selected settings"),
+duration: Duration(microseconds: 3000),
+// padding: EdgeInsets.all(20),
+));
+} else if (value == 3) {
+ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+content: Text("You selected about"),
+duration: Duration(microseconds: 3000),
+// padding: EdgeInsets.all(20),
+));
+}
+},
+)
+],
+actionsIconTheme: const IconThemeData(color: Colors.blue, size: 20),
+),

@@ -1,0 +1,13 @@
+//Slider
+//first define a couter variable of type int
+Slider(
+value: counter.toDouble(),
+min: 0,
+max: 10,
+divisions: 10,
+label: counter.round().toString(),
+onChanged: (value){
+setState(() {
+counter=value.toInt();
+},);
+})

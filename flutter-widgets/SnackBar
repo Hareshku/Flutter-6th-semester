@@ -1,0 +1,17 @@
+
+// SnackBar
+
+ElevatedButton(
+onPressed: () {
+ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+action: SnackBarAction(
+label: "Snack Bar",
+onPressed: () {},
+),
+content: Text("SBAR"),
+duration: Duration(microseconds: 3000),
+padding: EdgeInsets.all(20),
+));
+},
+child: Text("SnackBar"),
+),

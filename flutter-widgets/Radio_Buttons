@@ -1,0 +1,27 @@
+//Radio Button
+Row(
+                children: [
+                  Text("Select Gender"),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Male"),
+                  Radio(
+                      value: "Male",
+                      groupValue: gender,
+                      onChanged: (value) {
+                        setState(() {
+                          gender = value.toString();
+                        });
+                      }),
+                  Text("F-Male"),
+                  Radio(
+                      value: "F-Male",
+                      groupValue: gender,
+                      onChanged: (value) {
+                        setState(() {
+                          gender = value.toString();
+                        });
+                      }),
+                ],
+              ),

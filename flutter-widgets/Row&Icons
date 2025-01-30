@@ -1,0 +1,32 @@
+
+// Row and icon
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.favorite,
+                color: Colors.pink,
+                size: 24,
+                semanticLabel: 'love',
+              ),
+              Icon(
+                Icons.home,
+                color: Colors.pink,
+                size: 24,
+                semanticLabel: 'home',
+              ),
+              Icon(
+                Icons.settings,
+                color: Colors.pink,
+                size: 24,
+                semanticLabel: 'love',
+              ),
+              Icon(
+                Icons.notification_add,
+                color: Colors.pink,
+                size: 24,
+                semanticLabel: 'love',
+              )
+            ],
+          ),

@@ -1,0 +1,16 @@
+
+// DropDownMenu
+
+DropdownButton(value: chooseVal, items: items.map<DropdownMenuItem<String>>((String?value){
+return DropdownMenuItem<String>(
+value: value,
+child: Text(value!),
+);
+},).toList(),
+hint: Text('Please chose the platform'),
+onChanged: (value){
+setState(() {
+chooseVal=value;
+});
+},
+)

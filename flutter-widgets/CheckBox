@@ -1,0 +1,27 @@
+//CheckBox
+
+
+Row(
+                children: [
+                  Text("Select Gender"),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Male"),
+                  Checkbox(
+                      value: Male,
+                      onChanged: (bool? value) {
+                        setState(() {
+                          Male = value!;
+                        });
+                      }),
+                  Text("Female"),
+                  Checkbox(
+                      value: Female,
+                      onChanged: (bool? value) {
+                        setState(() {
+                          Female = value!;
+                        });
+                      }),
+                ],
+              ),

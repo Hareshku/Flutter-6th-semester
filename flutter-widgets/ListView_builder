@@ -1,0 +1,22 @@
+
+//ListView.builder
+Expanded(
+    child: ListView.builder(
+      padding: EdgeInsets.all(20),
+      itemCount: item.length,
+      itemBuilder: (context, index){
+      return Card(
+        color: Colors.pink,
+        child: ListTile(
+          title: Text(item[index],style: TextStyle(color: Colors.white, fontSize: 20),),
+          subtitle: Text('Bio',style: TextStyle(color: Colors.blue, fontSize: 20),),
+          leading: CircleAvatar(
+            backgroundImage: NetworkImage('http://ts3.mm.bing.net/th?id=OIP.n5CeR93916slWXGyV13PuAHaHa&pid=15.1'),
+          ),
+          trailing: Icon(Icons.star),
+        ),
+      );
+    },
+
+    ),
+),

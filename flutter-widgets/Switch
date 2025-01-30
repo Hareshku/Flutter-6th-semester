@@ -1,0 +1,15 @@
+
+//Switch
+
+Center(
+child: Switch(
+value: isSwitched,
+onChanged: (value) {
+setState(() {
+isSwitched = value;
+});
+},
+activeTrackColor: Colors.greenAccent,
+activeColor: Colors.green,
+),
+),

@@ -1,0 +1,111 @@
+//TextButton
+outside padding
+            padding: const EdgeInsets.only(
+              top: 100,
+              left: 20,
+              right: 20,
+            ),
+            child: SizedBox(
+              // used for giving height and width according to our need
+              width: double.infinity, // will take the 100% of th screen
+              height: 30,
+              child: TextButton(
+                style: ButtonStyle(
+                  // giving style to the button like text color, bg color, padding etc.
+                    alignment: Alignment.center,
+                    foregroundColor: WidgetStateProperty.all(Colors.blue),
+                    backgroundColor:
+                    WidgetStateProperty.all(Colors.deepPurple),
+                    padding: WidgetStateProperty.all(EdgeInsets.all(15))),
+                onPressed: () {},
+                child: Text("TextButton"),
+              ),
+            ),
+          ),
+
+
+// Elevated button
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 20,
+              left: 20,
+              right: 20,
+            ),
+            child: SizedBox(
+              width: 300,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                    foregroundColor: WidgetStateProperty.all(Colors.blue),
+                    backgroundColor: WidgetStateProperty.all(Colors.grey),
+                    padding: WidgetStateProperty.all(
+                      EdgeInsets.all(15),
+                    )),
+                onPressed: () {},
+                child: Text('Elevated'),
+              ),
+            ),
+          ),
+
+
+
+// Outlined button
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 30,
+              left: 20,
+              right: 20,
+            ),
+            child: SizedBox(
+              width: double.infinity,
+              // height: 30,
+              child: OutlinedButton(
+                onPressed: () {},
+                child: Text("Outlined"),
+                style: ButtonStyle(
+                  side: WidgetStateProperty.all(
+                    BorderSide(color: Colors.red, width: 2),
+                  ),
+                  alignment: Alignment.center,
+                  foregroundColor: WidgetStateProperty.all(Colors.red),
+                  // backgroundColor: WidgetStateProperty.all(Colors.pink),
+                ),
+              ),
+            ),
+          ),
+
+
+
+
+//IconButtons
+          Padding(padding: const EdgeInsets.only(
+            top: 20,
+            right: 20,
+            left: 20,
+          ),
+            child: SizedBox(
+              width: double.infinity,
+              child: IconButton(
+                highlightColor: Colors.red,
+                hoverColor: Colors.pink,
+                onPressed: () {},
+                icon: Icon(Icons.favorite),
+                color: Colors.pink,
+                padding: EdgeInsets.all(10),
+                style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.all(Colors.blue),
+                  foregroundColor: WidgetStateProperty.all(Colors.yellow),
+                ),
+              ),
+            ),
+          ),
+
+
+
+// Floating action button
+floatingActionButton: FloatingActionButton(
+            onPressed: (){},
+            child: Icon(Icons.add),
+          ),
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerFloat,
+        ),

@@ -1,0 +1,28 @@
+
+//RadioListTile
+Column(
+children: [
+Text("Select Gender"),
+RadioListTile(
+title: Text("Male"),
+value:'Male', groupValue: gender, onChanged: (String?value){
+setState(() {
+gender=value;
+});
+},),
+RadioListTile(
+title: Text("Female"),
+value:'Female', groupValue: gender, onChanged: (String?value){
+setState(() {
+gender=value;
+});
+},),
+RadioListTile(
+title: Text("Other"),
+value:'Other', groupValue: gender, onChanged: (String?value){
+setState(() {
+gender=value;
+});
+},),
+],
+),

@@ -1,0 +1,16 @@
+
+// TabBarView use DefaultTabController at as parent of the scaffold
+
+TabBarView(
+children: [
+buildPage('Home Page'),
+buildPage('About Page'),
+buildPage('Project Page'),
+buildPage('Notification Page'),
+],
+),
+
+//make this method at the last of the code but below the material app
+Widget buildPage(String text)=>Center(
+  child: Text(text,),
+);

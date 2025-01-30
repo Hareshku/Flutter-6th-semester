@@ -1,0 +1,35 @@
+
+// listView and ListTle and images
+
+    Expanded(
+      // flex: 2,
+      child: Container(
+        child:  ListView(
+          padding: EdgeInsets.all(50),
+          scrollDirection: Axis.vertical,
+          children: [
+            // Image.network('https://th.bing.com/th/id/OIP.acu_mTgbJF2K0dfy8AqXLwAAAA?pid=ImgDet&w=178&h=267&c=7&dpr=1.5'),
+            // Image.network('https://th.bing.com/th/id/OIP.acu_mTgbJF2K0dfy8AqXLwAAAA?pid=ImgDet&w=178&h=267&c=7&dpr=1.5'),
+            // Image.network('https://th.bing.com/th/id/OIP.acu_mTgbJF2K0dfy8AqXLwAAAA?pid=ImgDet&w=178&h=267&c=7&dpr=1.5'),
+               ListTile(
+                 title: Text('Profile'),
+                 leading: Icon(Icons.person),
+               ),
+            ListTile(
+              title: Text('settings'),
+              leading: Icon(Icons.settings),
+            ),
+            ListTile(
+              title: Text('Update'),
+              leading: Icon(Icons.update),
+            ),
+            ListTile(
+              title: Text('Alert'),
+              leading: Icon(Icons.add_alert),
+            ),
+
+          ],
+        ),
+
+      ),
+    ),

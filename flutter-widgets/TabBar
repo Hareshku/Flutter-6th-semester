@@ -1,0 +1,11 @@
+
+// TabBar inside appBar
+bottom:const TabBar(
+tabs: [
+Tab( icon: Icon(Icons.home),text: 'Home',),
+Tab(icon: Icon(Icons.settings),text: 'About'),
+Tab(icon: Icon(Icons.account_circle),text: 'Projects'),
+Tab(icon: Icon(Icons.notification_add),text: 'Notifications'),
+],
+labelPadding: EdgeInsets.zero,
+),

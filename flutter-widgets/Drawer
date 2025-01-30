@@ -1,0 +1,26 @@
+
+// Drawer
+
+drawer:   Drawer(
+backgroundColor: Colors.pink,
+child: ListView(
+children: [
+DrawerHeader(child: ListTile(
+leading: CircleAvatar(
+backgroundImage: NetworkImage('http://ts3.mm.bing.net/th?id=OIP.n5CeR93916slWXGyV13PuAHaHa&pid=15.1'),
+),
+title: Text('Name'),
+subtitle: Text("Biography"),
+)),
+
+ListTile(
+title: Text("Phone"),
+leading: Icon(Icons.phone),
+),
+ListTile(
+title: Text('Email'),
+leading: Icon(Icons.email),
+)
+],
+),
+),
